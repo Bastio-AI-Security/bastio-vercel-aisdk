@@ -1,4 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bastio AI Security + Vercel AI SDK Demo
+
+This project showcases how [Bastio AI Security](https://www.bastio.com) works together with the [Vercel AI SDK](https://ai-sdk.dev/docs/getting-started/nextjs-app-router) to build secure AI-powered applications.
+
+Bastio provides enterprise-grade security for LLM applications, including:
+- Prompt injection protection
+- Data leakage prevention (PII & DLP)
+- Real-time threat detection
+- Policy enforcement and analytics
+- API key management and caching
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), integrated with the Vercel AI SDK for building AI chatbots and applications.
+
+## Setup
+
+1. Copy the environment variables template:
+
+```bash
+cp .env.example .env.local
+```
+
+2. Fill in your Bastio credentials from the [Bastio dashboard](https://www.bastio.com):
+   - `BASTIO_PROXY_URL` - API gateway URL (default: `https://api.bastio.com/v1`)
+   - `BASTIO_PROXY_ID` - Your proxy ID from Bastio dashboard
+   - `BASTIO_API_KEY` - Your API key from Bastio dashboard
+
+**Free Tier:** Bastio offers a generous free tier with 10,000 API requests per month for BYOK (Bring Your Own Key).
 
 ## Getting Started
 
